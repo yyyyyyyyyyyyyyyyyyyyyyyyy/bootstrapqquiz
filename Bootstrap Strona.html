@@ -1,144 +1,1201 @@
 <!DOCTYPE html>
-<!-- saved from url=(0062)file://zstsrv/przybylski.pawel$$/desktop/Stronabootstrap.html# -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./Bootstrap Strona_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-    <title>Bootstrap Strona</title>
 
-<style>
+<html lang="pl">
 
-.naglowek{
+<head>
 
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    background-color: rgb(145, 107, 180);
-    color: rgb(92, 66, 116);
-}
+    <meta charset="UTF-8">
 
-body{
-    background-color: rgb(192, 161, 221);
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.bootstrapl{
-float: left;
-font-size: 30px;
-font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
+    <title>Quiz wiedzy ogólnej</title>
 
-    color: rgb(92, 66, 116);
-}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-.bootstrapr{
-    float: right;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
+    <style>
 
-    color: rgb(92, 66, 116);
-}
+        body {
 
-</style>
+            background-color: rgb(149, 191, 224);
+
+        }
+
+ 
+
+        h1 {
+
+            padding: 30px;
+
+            font-size: 45px;
+
+            font-family: 'Calibri';
+
+        }
+
+ 
+
+        div, p {
+
+            font-family: 'Calibri';
+
+            font-size: 20px;
+
+        }
+
+ 
+
+        .srodek-text {
+
+            text-align: center;
+
+        }
+
+ 
+
+        .srodek-button {
+
+            display: flex;
+
+            justify-content: center;
+
+            padding: 15px;
+
+        }
+
+        .sprodp
+
+        {
+
+            padding: 10px;
+
+        }
+
+ 
+
+        img{
+
+            height: 300px;
+
+            width: 500px;
+
+            margin: 15px;
+
+            border-style: dashed;
+
+            border-color: rgb(72, 104, 129);
+
+        }
+
+    </style>
 
 </head>
+
 <body>
-    
-<section>
-    <div class="naglowek">naglowek</div>
-</section>
 
-<section>
-    <div class="bootstrapl">
-       <header>Navbar brand</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-          <a class="navbar-brand">
-            <img src="./Bootstrap Strona_files/Bootstrap_logo.svg.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Bootstrap
-          </a>
+    <a class="navbar-brand">Quiz</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section1">Pytanie 1</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section2">Pytanie 2</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section3">Pytanie 3</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section4">Pytanie 4</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section5">Pytanie 5</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section6">Pytanie 6</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section7">Pytanie 7</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section8">Pytanie 8</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section9">Pytanie 9</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section10">Pytanie 10</a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+ 
+
+<div class="container-fluid" id="section1">
+
+    <h1 class="srodek-text">Quiz wiedzy ogólnej</h1>
+
+ 
+
+    <!-- pytanie 1 -->
+
+ 
+
+    <p class="srodek-text"><b>1. Kto NIE dostał Nobla?</b></p>
+
+ 
+
+    <div class="text-center">
+
+        <img src="https://poprostunauka.cm-uj.krakow.pl/cm/uploads/2019/04/NOBEL.png" alt="Nobel">
+
+    </div>
+
+ 
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp1" id="id1_1" value="a1">
+
+            <label class="form-check-label" for="id1_1">
+
+                Henryk Sienkiewicz
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp1" id="id1_2" value="b1">
+
+            <label class="form-check-label" for="id1_2">
+
+                Olga Tokarczuk
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp1" id="id1_3" value="c1">
+
+            <label class="form-check-label" for="id1_3">
+
+                Władysław Reymont
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp1" id="id1_4" value="d1">
+
+            <label class="form-check-label" for="id1_4">
+
+                Dawid Tarasiński
+
+                <span id="answer1_emoji"></span>
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp1', 'd1')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp1', 'd1')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 2 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+<div class="container-fluid" id="section2">
+
+    <p class="srodek-text"><b>2. Stolicą Polski NIE był/o:</b></p>
+
+ 
+
+    <div class="text-center">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/POL_Radom_map.svg/1200px-POL_Radom_map.svg.png" alt="Mapa_polski">
+
+    </div>
+
+ 
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp2" id="id2_1" value="a2">
+
+            <label class="form-check-label" for="id2_1">
+
+                Gniezno
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp2" id="id2_2" value="b2">
+
+            <label class="form-check-label" for="id2_2">
+
+                Kraków
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp2" id="id2_3" value="c2">
+
+            <label class="form-check-label" for="id2_3">
+
+                Olsztyn
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp2', 'c2')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp2', 'c2')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 3 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+<div class="container-fluid" id="section3">
+
+    <p class="srodek-text"><b>3. Co jest głównym składnikiem ziemskiej atmosfery?</b></p>
+
+    <div class="text-center">
+
+        <img src="https://tvn24.pl/tvnmeteo/najnowsze/cdn-zdjecief552246a4b183c9744aca58549dd9944-atmosfera-ziemska-jest-bogata-w-tlen-m-in-dzieki-erupcjom-wulkanow-4136080/0546e2bf-91f5-44f9-a089-a0219b91d906.jpg" alt="atmosfera">
+
+    </div>
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp3" id="id3_1" value="a3">
+
+            <label class="form-check-label" for="id3_1">
+
+                tlen
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp3" id="id3_2" value="b3">
+
+            <label class="form-check-label" for="id3_2">
+
+                azot
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp3" id="id3_3" value="c3">
+
+            <label class="form-check-label" for="id3_3">
+
+                para wodna
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp3', 'b3')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp3', 'b3')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 4 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+<div class="container-fluid" id="section4">
+
+    <p class="srodek-text"><b>4. Co to za kolor: rgb(255, 255, 0)?</b></p>
+
+    <div class="text-center">
+
+        <img src="https://static.wikia.nocookie.net/lgbt/images/6/64/Flaga.png/revision/latest/scale-to-width-down/768?cb=20200506191935&path-prefix=pl" alt="kolory">
+
+    </div>
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp4" id="id4_1" value="a4">
+
+            <label class="form-check-label" for="id4_1">
+
+                żółty
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp4" id="id4_2" value="b4">
+
+            <label class="form-check-label" for="id4_2">
+
+                różowy
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp4" id="id4_3" value="c4">
+
+            <label class="form-check-label" for="id4_3">
+
+                cyjanowy
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp4', 'a4')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp4', 'a4')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 5 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+ 
+
+<div class="container-fluid" id="section5">
+
+    <p class="srodek-text"><b>5. Co rośnie na tym polu?</b></p>
+
+    <div class="text-center">
+
+        <img src="https://ocdn.eu/pulscms-transforms/1/ymektkpTURBXy9jY2VjNDRlYjVmMzJjMjNhZTRhYzE5OTIzMWYyYThiYi5qcGeSlQLNAxQAwsOVAgDNAvjCww" alt="roslinka">
+
+    </div>
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp5" id="id5_1" value="a5">
+
+            <label class="form-check-label" for="id5_1">
+
+                proso
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp5" id="id5_2" value="b5">
+
+            <label class="form-check-label" for="id5_2">
+
+                soja
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp5" id="id5_3" value="c5">
+
+            <label class="form-check-label" for="id5_3">
+
+                maczek kalifornijski
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp5" id="id5_4" value="d5">
+
+            <label class="form-check-label" for="id5_4">
+
+                ubiorek okółkowy
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp5" id="id5_5" value="e5">
+
+            <label class="form-check-label" for="id5_5">
+
+                Brassica napus
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp5" id="id5_6" value="f5">
+
+            <label class="form-check-label" for="id5_6">
+
+                mlecz rozwinięty
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp5', 'e5')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp5', 'e5')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 6 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+ 
+
+<div class="container-fluid" id="section6">
+
+    <p class="srodek-text"><b>6. Hokkaido to jedna z popularnych odmian:</b></p>
+
+    <div class="text-center">
+
+        <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=1920x1024:format=png/path/sf970ae9be73da2a3/image/i02c14c7a84537815/version/1618450992/japan-map.png" alt="hokkaido">
+
+    </div>
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp6" id="id6_1" value="a6">
+
+            <label class="form-check-label" for="id6_1">
+
+                dyni
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp6" id="id6_2" value="b6">
+
+            <label class="form-check-label" for="id6_2">
+
+                jabłka
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp6" id="id6_3" value="c6">
+
+            <label class="form-check-label" for="id6_3">
+
+                cukinii
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp6" id="id6_4" value="d6">
+
+            <label class="form-check-label" for="id6_4">
+
+                podziału administracyjnego Japonii
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp6', 'a6')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp6', 'a6')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 7 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+ 
+
+<div class="container-fluid" id="section7">
+
+    <p class="srodek-text"><b>7. Która z tych planet jest NAJDALEJ od słońca?</b></p>
+
+    <div class="text-center">
+
+        <img src="https://ocdn.eu/pulscms-transforms/1/Bkuk9kpTURBXy8zZjUyNjI5YzlhNjNjN2E3ZjE5ZDg3OWIyMTI2YTNhNC5qcGeTlQMAF80D6M0CMpUCzQSwAMPDkwmmZDYyNTczBt4AAaEwAQ/plaskoziemcy-wierza-ze-ziemia-jest-plaska.jpeg" alt="ziemia">
+
+    </div>
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp7" id="id7_1" value="a7">
+
+            <label class="form-check-label" for="id7_1">
+
+                Mars
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp7" id="id7_2" value="b7">
+
+            <label class="form-check-label" for="id7_2">
+
+                Merkury
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp7" id="id7_3" value="c7">
+
+            <label class="form-check-label" for="id7_3">
+
+                Wenus
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp7" id="id7_4" value="d7">
+
+            <label class="form-check-label" for="id7_4">
+
+                Ziemia
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp7', 'a7')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp7', 'a7')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 8 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+ 
+
+<div class="container-fluid" id="section8">
+
+    <p class="srodek-text"><b>8. Ile wynosi pierwiastek kwadratowy z 441?</b></p>
+
+    <div class="text-center">
+
+        <img src="https://2.bp.blogspot.com/-dSe81Yr7Btc/U26OGtRzJAI/AAAAAAAABLQ/VYeK4IC3cfg/s1600/pierwiastek.png" alt="pierwiastek">
+
+    </div>
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp8" id="id8_1" value="a8">
+
+            <label class="form-check-label" for="id8_1">
+
+                22
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp8" id="id8_2" value="b8">
+
+            <label class="form-check-label" for="id8_2">
+
+                23
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp8" id="id8_3" value="c8">
+
+            <label class="form-check-label" for="id8_3">
+
+                21
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp8" id="id8_4" value="d8">
+
+            <label class="form-check-label" for="id8_4">
+
+                19
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp8" id="id8_5" value="e8">
+
+            <label class="form-check-label" for="id8_5">
+
+                24
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp8', 'c8')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp8', 'b8')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 9 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+ 
+
+<div class="container-fluid" id="section9">
+
+    <p class="srodek-text"><b>9. "Skupić się" znaczy:</b></p>
+
+    <div class="text-center">
+
+        <img src="https://static.wikia.nocookie.net/evade-nextbot/images/b/b5/Nerd.png/revision/latest?cb=20220822144117" alt="nerd">
+
+    </div>
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp9" id="id9_1" value="a9">
+
+            <label class="form-check-label" for="id9_1">
+
+                kupić dużą ilość rzeczy
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp9" id="id9_2" value="b9">
+
+            <label class="form-check-label" for="id9_2">
+
+                zesrać się
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp9" id="id9_3" value="c9">
+
+            <label class="form-check-label" for="id9_3">
+
+                skoncentrować się
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp9', 'c9')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp9', 'c9')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+<!-- pytanie 10 -->
+
+ 
+
+<br><br><br>
+
+ 
+
+ 
+
+<div class="container-fluid" id="section10">
+
+    <p class="srodek-text"><b>10. Bootstrap'a stworzył/a:</b></p>
+
+    <div class="text-center">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" alt="bootstrap">
+
+    </div>
+
+    <form class="srodek-text">
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp10" id="id10_1" value="a10">
+
+            <label class="form-check-label" for="id10_1">
+
+                Tim Berners-Lee
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp10" id="id10_2" value="b10">
+
+            <label class="form-check-label" for="id10_2">
+
+                organizacja W3C
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input class="form-check-input" type="radio" name="odp10" id="id10_3" value="c10">
+
+            <label class="form-check-label" for="id10_3">
+
+                Marka Otto
+
+            </label>
+
+        </div>
+
+    </form>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="sprawdz('odp10', 'c10')">Sprawdź</button>
+
+        <button class="btn btn-success ml-2" onclick="sprawdzodp('odp10', 'c10')">Sprawdź odpowiedź</button>
+
+    </div>
+
+</div>
+
+ 
+
+ 
+
+ 
+
+ 
+
+<br><br>
+
+ 
+
+<div class="container-fluid" id="koncowyWynik">
+
+    <h1 class="srodek-text">Twój końcowy wynik:</h1>
+
+    <p class="srodek-text"><b id="koncowyWynikValue"></b></p>
+
+    <div class="srodek-button">
+
+        <button class="btn btn-primary" onclick="pokazWynik()">Pokaż Wynik</button>
+
+    </div>
+
+</div>
+
+ 
+
+<br><br><br><br>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand">Autor: Paweł Przybylski</a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section1">Pytanie 1</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section2">Pytanie 2</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section3">Pytanie 3</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section4">Pytanie 4</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section5">Pytanie 5</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section6">Pytanie 6</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section7">Pytanie 7</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section8">Pytanie 8</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section9">Pytanie 9</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#section10">Pytanie 10</a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+ 
+
+ 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+
+    let score = 0;
+
+ 
+
+    function sprawdz(Id, prawidlowa) {
+
+        const wybrana = document.querySelector(`input[name=${Id}]:checked`);
+
+        const emojiSpan = document.getElementById(`${Id}_emoji`);
+
+ 
+
+        if (wybrana && wybrana.value === prawidlowa) {
+
+            score++;
+
+            alert('Dobrze!' + '\nTwój wynik: ' + score);
+
+            emojiSpan.textContent = '⬅';
+
+        } else {
+
+            alert('Źle! 🤡🤡🤡' + '\nTwój wynik się zresetował');
+
+            score = 0;
+
+        }
+
        
-      </div>
-</section>
 
-<section>
-    <div class="bootstrapr">
-        <header>Karta</header>
+    }
 
-        <div class="card" style="width: 18rem; background-color: rgb(145, 107, 180);">
-            <img src="./Bootstrap Strona_files/karta_gold_image.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Karcioszka</h5>
-              <p class="card-text">Karta</p>   
-            </div>
-          </div>
+ 
 
-    </div>
-</section>
+    function sprawdzodp(Id, prawidlowa) {
 
-<section>
-    <div class="bootstrapl">
-        <header>Progress</header>
-        <div class="progress" style="background-color: rgb(145, 107, 180); color: rgb(92, 66, 116);">
-            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-          </div>
-    </div>
-</section>
+        const poprawnaOdpowiedz = document.querySelector(`input[name=${Id}][value=${prawidlowa}]`);
 
-<section>
-    <div class="bootstrapr">
-        <header>Dropdown</header>
+        const poprawnaLabel = poprawnaOdpowiedz.nextElementSibling;
 
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(145, 107, 180); color: rgb(92, 66, 116);">
-              Dropujący guzik
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="file://zstsrv/przybylski.pawel$$/desktop/Stronabootstrap.html#">jeden</a></li>
-              <li><a class="dropdown-item" href="file://zstsrv/przybylski.pawel$$/desktop/Stronabootstrap.html#">dwa</a></li>
-              <li><a class="dropdown-item" href="file://zstsrv/przybylski.pawel$$/desktop/Stronabootstrap.html#">trzy</a></li>
-            </ul>
-          </div>
+ 
 
-    </div>
-</section>
+        if (poprawnaOdpowiedz) {
 
-<section>
-    <div class="bootstrapl">
-        <header>List group</header>
+            poprawnaLabel.textContent += " 🢀";
 
-        <ul class="list-group">
-            <li class="list-group-item" style="background-color: rgb(145, 107, 180);">Jedna rzecz</li>
-            <li class="list-group-item" style="background-color: rgb(145, 107, 180);">Druga rzecz</li>
-            <li class="list-group-item" style="background-color: rgb(145, 107, 180);">Trzecia rzecz</li>
-            <li class="list-group-item" style="background-color: rgb(145, 107, 180);">Czwarta rzecz</li>
-          </ul>
+        }
 
-    </div>
-</section>
+    }
 
-<section>
-    <div class="bootstrapr">
-        <header>Spinner</header>
+ 
 
-        <button class="btn btn-primary" type="button" disabled="" style="background-color: rgb(145, 107, 180); color: rgb(92, 66, 116);">
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            Ładowanie ∞
-          </button>
+    function pokazWynik() {
 
-    </div>
-</section>
+        const koncowyWynikValue = document.getElementById("koncowyWynikValue");
 
+       
 
+        if(score > 10){
 
-    <script src="./Bootstrap Strona_files/jquery-3.3.1.slim.min.js.pobrane" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="./Bootstrap Strona_files/popper.min.js.pobrane" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="./Bootstrap Strona_files/bootstrap.min.js.pobrane" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            koncowyWynikValue.textContent = "🤬🤬🤬  " + 'Nie oszukuj' + "  🤬🤬🤬";
 
-</body></html>
+        }
+
+        else if (score >= 9)
+
+        {
+
+            koncowyWynikValue.textContent = "😱😱😱  " + score + "  😱😱😱";
+
+        }
+
+        else if (score <= 2) {
+
+            koncowyWynikValue.textContent = "🤡🤡🤡  " + score + "  🤡🤡🤡";
+
+        }
+
+        else{
+
+            koncowyWynikValue.textContent = "⏩⏩⏩  " + score + "  ⏪⏪⏪";
+
+        }
+
+    }
+
+</script>
+
+</body>
+
+</html>
