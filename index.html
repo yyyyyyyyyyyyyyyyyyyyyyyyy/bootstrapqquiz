@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 
 <head>
@@ -11,25 +10,39 @@
     <title>Quiz wiedzy ogólnej</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <style>
 
         body {
 
-            background-color: rgb(149, 191, 224);
+            
 
+            background: linear-gradient(to bottom, rgb(149, 191, 224),rgb(70, 112, 145) ,rgb(27, 61, 87));
         }
 
  
-
+        #MainText{
+            background: -webkit-linear-gradient(
+            90deg,
+            rgba(13, 8, 96, 1) 0%,
+            rgba(9, 9, 121, 1) 21%,
+            rgba(6, 84, 170, 1) 51%,
+            rgba(0, 255, 113, 1) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       
+        }
         h1 {
 
             padding: 30px;
 
-            font-size: 45px;
+            font-size: 60px;
 
             font-family: 'Calibri';
 
+            font-weight: bolder;
         }
 
  
@@ -86,13 +99,25 @@
 
         }
 
+        .text-light1
+        {
+            color: white;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+        }
+
+        .text-light2
+        {
+            color: black;
+            text-shadow: 2px 2px 4px rgb(119, 169, 207);
+        }
+
     </style>
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
 
     <a class="navbar-brand">Quiz</a>
 
@@ -178,7 +203,7 @@
 
 <div class="container-fluid" id="section1">
 
-    <h1 class="srodek-text">Quiz wiedzy ogólnej</h1>
+    <h1 class="srodek-text" id="MainText" >Quiz wiedzy ogólnej</h1>
 
  
 
@@ -186,7 +211,7 @@
 
  
 
-    <p class="srodek-text"><b>1. Kto NIE dostał Nobla?</b></p>
+    <p  class="srodek-text text-light2" ><b>1. Kto NIE dostał Nobla?</b></p>
 
  
 
@@ -272,7 +297,7 @@
 
  
 
-<div class="container-fluid" id="section2">
+<div class="text-light2" class="container-fluid" id="section2">
 
     <p class="srodek-text"><b>2. Stolicą Polski NIE był/o:</b></p>
 
@@ -346,7 +371,7 @@
 
  
 
-<div class="container-fluid" id="section3">
+<div class="text-light2" class="container-fluid" id="section3">
 
     <p class="srodek-text"><b>3. Co jest głównym składnikiem ziemskiej atmosfery?</b></p>
 
@@ -416,7 +441,7 @@
 
  
 
-<div class="container-fluid" id="section4">
+<div class="text-light2" class="container-fluid" id="section4">
 
     <p class="srodek-text"><b>4. Co to za kolor: rgb(255, 255, 0)?</b></p>
 
@@ -488,7 +513,7 @@
 
  
 
-<div class="container-fluid" id="section5">
+<div class="text-light2" class="container-fluid" id="section5">
 
     <p class="srodek-text"><b>5. Co rośnie na tym polu?</b></p>
 
@@ -596,7 +621,7 @@
 
  
 
-<div class="container-fluid" id="section6">
+<div class="text-light2" class="container-fluid" id="section6">
 
     <p class="srodek-text"><b>6. Hokkaido to jedna z popularnych odmian:</b></p>
 
@@ -618,7 +643,7 @@
 
             </label>
 
-        </div>
+        </div> 
 
         <div class="form-check">
 
@@ -680,7 +705,7 @@
 
  
 
-<div class="container-fluid" id="section7">
+<div class="text-light1" class="container-fluid" id="section7">
 
     <p class="srodek-text"><b>7. Która z tych planet jest NAJDALEJ od słońca?</b></p>
 
@@ -764,7 +789,7 @@
 
  
 
-<div class="container-fluid" id="section8">
+<div  class="text-light1" class="container-fluid" id="section8">
 
     <p class="srodek-text"><b>8. Ile wynosi pierwiastek kwadratowy z 441?</b></p>
 
@@ -860,7 +885,7 @@
 
  
 
-<div class="container-fluid" id="section9">
+<div class="text-light1" class="container-fluid" id="section9">
 
     <p class="srodek-text"><b>9. "Skupić się" znaczy:</b></p>
 
@@ -932,7 +957,7 @@
 
  
 
-<div class="container-fluid" id="section10">
+<div class="text-light1" class="container-fluid" id="section10">
 
     <p class="srodek-text"><b>10. Bootstrap'a stworzył/a:</b></p>
 
@@ -1004,11 +1029,11 @@
 
  
 
-<div class="container-fluid" id="koncowyWynik">
+<div class="text-light1" class="container-fluid" id="koncowyWynik">
 
     <h1 class="srodek-text">Twój końcowy wynik:</h1>
 
-    <p class="srodek-text"><b id="koncowyWynikValue"></b></p>
+    <p style="font-size: 50px;" class="srodek-text animated zoomIn slower"><b id="koncowyWynikValue"></b></p>
 
     <div class="srodek-button">
 
@@ -1025,74 +1050,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
     <a class="navbar-brand">Autor: Paweł Przybylski</a>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-
-        <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section1">Pytanie 1</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section2">Pytanie 2</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section3">Pytanie 3</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section4">Pytanie 4</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section5">Pytanie 5</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section6">Pytanie 6</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section7">Pytanie 7</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section8">Pytanie 8</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section9">Pytanie 9</a>
-
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="#section10">Pytanie 10</a>
-
-            </li>
-
-        </ul>
-
-    </div>
 
 </nav>
 
@@ -1111,6 +1068,7 @@
     let score = 0;
 
  
+
 
     function sprawdz(Id, prawidlowa) {
 
@@ -1132,7 +1090,7 @@
 
             alert('Źle! 🤡🤡🤡');
 
-        
+            
 
         }
 
